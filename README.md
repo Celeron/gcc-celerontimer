@@ -16,7 +16,7 @@ API библиотеки описано в "заголовочном файле"
 
 ::
 
-<module1.c>
+  <module1.c>
 
     #include "celerontimer.h"
 
@@ -78,14 +78,14 @@ API библиотеки описано в "заголовочном файле"
 
 
 
-<module1.h>
+  <module1.h>
 
     // Декларировать глобальный таймер - расшарить имя для других модулей программы
     DELAY_DeclareExternalTimer(globaltimer1)
 
 
 
-<module2.c>
+  <module2.c>
 
     #include "celerontimer.h"
     #include "module1.h"
@@ -107,7 +107,7 @@ API библиотеки описано в "заголовочном файле"
        А в других "внешних модулях" использовать только наблюдательные действия, не изменяющие состояния таймера (методы: DELAY_IsTimerOn, DELAY_RemainingTime).
     */
     
-    quax()
+    qux()
     {
         if(DELAY_CheckTimer(globaltimer1))
         {
@@ -115,7 +115,7 @@ API библиотеки описано в "заголовочном файле"
         }
     }
 
-    // TODO: рефакторинг, перенести функцию quax()  в модуль <module1.c>
+    // TODO: рефакторинг, перенести функцию qux()  в модуль <module1.c>
 
 
 
