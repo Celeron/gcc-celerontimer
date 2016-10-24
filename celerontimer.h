@@ -61,7 +61,8 @@ extern volatile uint32_t DELAY_SysTick;
 
 // Установить Таймер "name" на "time" мс вперёд от текущего момента
 #define DELAY_SetTimer(name, time)                              \
-{   DELAY_##name##_timer = DELAY_SysTick + (time);              \
+{   DELAY_##name##_on    = 0;                                   \
+    DELAY_##name##_timer = DELAY_SysTick + (time);              \
     DELAY_##name##_on    = 1;   }
 
 // Проверить, включен ли Таймер?
