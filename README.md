@@ -137,8 +137,7 @@ API библиотеки описано в "заголовочном файле"
 
 
 
-
-ENGLISH:
+  ENGLISH:
 
   GCC compatible C compiler.
 
