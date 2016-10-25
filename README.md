@@ -137,13 +137,13 @@ API библиотеки описано в "заголовочном файле"
 
 
 
-  ENGLISH:
-
-  GCC compatible C compiler.
-
-  8-bit and 32-bit microcontrollers are supported!
-
-  *Just one requirement for 8-bit microcontrollers: 1ms "Hard Timer" interrupt handler, where you place the DELAY_IncSysTick() call, must have highest (or the same) priority among other handlers, which use "Soft Timers"! To avoid fragmentation of DELAY_SysTick variable incrementation process. That is all!*
+  | ENGLISH:
+  |
+  | GCC compatible C compiler.
+  |
+  | 8-bit and 32-bit microcontrollers are supported!
+  |
+  | *Just one requirement for 8-bit microcontrollers: 1ms "Hard Timer" interrupt handler, where you place the DELAY_IncSysTick() call, must have highest (or the same) priority among other handlers, which use "Soft Timers"! To avoid fragmentation of DELAY_SysTick variable incrementation process. That is all!*
 
 
 
